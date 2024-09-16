@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rigister page</title>
+</head>
+<body>
+    <h1>Rigistration Form</h1>
+    <form action=".\Register-responce.html" method="post">
+        <dl>
+            <dt>
+                <label for="name">Name</label>
+            </dt>
+            <dd>
+                <input type="text" name="name" id="name" required placeholder="enter your name">
+            </dd>
+            <dt>
+                <label for="password">Password</label>
+            </dt>
+            <dd>
+                <input type="password" name="password" id="password" required minlength="8" maxlength="16">
+            </dd>
+            <dt>
+                <label for="email">Email</label>
+            </dt>
+            <dd>
+                <input type="email" name="email" id="email" required>
+            </dd>
+            <dt>
+                <label for="phno">Mobile Number</label>
+            </dt>
+            <dd>
+                <input type="number" name="phno" id="phno" required minlength="10" maxlength="10">
+            </dd>
+            <dt>
+                <label for="">Gender</label>
+            </dt>
+            <dd>
+                <input type="radio" name="gender" id="male" value="male" required>
+                <label for="male">Male</label>
+            </dd>
+            <dd>
+                <input type="radio" name="gender" id="female" value="female" required>
+                <label for="female">Female</label>
+            </dd>
+            <dt>
+                <label for="dob">Date of Birth</label>
+            </dt>
+            <dd>
+                <input type="datetime-local" name="dob" id="dob" required>
+            </dd>
+            <dt>
+                <label for="education">Education</label>
+            </dt>
+            <dd>
+                <input type="text" name="education" id="education">
+            </dd>
+        </dl>
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>

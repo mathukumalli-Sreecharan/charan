@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+</head>
+<body>
+    <h1>Login Page</h1>
+    <form action=".\login-responce.html" method="post">
+        <dl>
+            <dt>
+                <label for="username">UserName</label>
+            </dt>
+            <dd>
+                <input type="text" name="username" id="username" required placeholder="enter your name">
+            </dd>
+            <dt>
+                <label for="password">Password</label>
+            </dt>
+            <dd>
+                <input type="password" name="password" id="password" required minlength="8" maxlength="16">
+            </dd>
+        </dl>
+        <input type="submit" value="login"><br><br>
+        <a href=".\Register-page.html">Register</a>
+    </form>
+</body>
+</html>

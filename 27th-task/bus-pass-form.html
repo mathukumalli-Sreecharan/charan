@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus pass application form</title>
+</head>
+<body>
+    <center><h1>BUS PASS</h1>
+    <h2>Application Form</h2></center>
+    <form action=".\busspass-responce.html" method="post">
+    <fieldset>
+        <legend>Personal Details</legend>
+            <dl>
+                <dt>
+                    <label for="name">Name</label>
+                </dt>
+                <dd>
+                    <input type="text" name="name" id="name" required placeholder="enter your name">
+                </dd>
+                <dt>
+                    <label for="password">Password</label>
+                </dt>
+                <dd>
+                    <input type="password" name="password" id="password" required minlength="8" maxlength="16">
+                </dd>
+                <dt>
+                    <label for="email">Email</label>
+                </dt>
+                <dd>
+                    <input type="email" name="email" id="email" required>
+                </dd>
+                <dt>
+                    <label for="phno">Mobile Number</label>
+                </dt>
+                <dd>
+                    <input type="number" name="phno" id="phno" required minlength="10" maxlength="10">
+                </dd>
+                <dt>
+                    <label for="">Gender</label>
+                </dt>
+                <dd>
+                    <input type="radio" name="gender" id="male" value="male" required>
+                    <label for="male">Male</label>
+                </dd>
+                <dd>
+                    <input type="radio" name="gender" id="female" value="female" required>
+                    <label for="female">Female</label>
+                </dd>
+                <dt>
+                    <label for="">Student/Employee</label>
+                </dt>
+                <dd>
+                    <input type="radio" name="SorD" id="Student" value="Student" required>
+                    <label for="Student">Student</label>
+                </dd>
+                <dd>
+                    <input type="radio" name="SorD" id="Employee" value="Employee" required>
+                    <label for="Empolyee">Employee</label>
+                </dd>
+                <dt>
+                    <label for="dob">Date of Birth</label>
+                </dt>
+                <dd>
+                    <input type="datetime-local" name="dob" id="dob" required>
+                </dd>
+                <dt>
+                    <label for="Fname">Father Name/Gardian Name</label>
+                </dt>
+                <dd>
+                    <input type="text" name="Fname" id="Fname">
+                </dd>
+                <dt>
+                    <label for="Adhaarno">Adhaar Number</label>
+                </dt>
+                <dd>
+                    <input type="number" id="Adhaarno" name="Adhaarno" required maxlength="12">
+                </dd>
+            </dl>
+    </fieldset>
+    </form>
+    <form action=".\busspass-responce.html" method="post">
+    <fieldset>
+        <legend>Address Details</legend>
+        <dl>
+            <dt>
+                <label for="State">State</label>
+            </dt>
+            <dd>
+                <input type="text" name="State" id="State">
+            </dd>
+            <dt>
+                <label for="area">Area</label>
+            </dt>
+            <dd>
+                <input type="text" name="area" id="area" required>
+            </dd>
+            <dt>
+                <label for="nearby">Near-By</label>
+            </dt>
+            <dd>
+                <input type="text" name="nearby" id="nearby" reaquired>
+            </dd>
+            <dt>
+                <label for="buildingno">Building no/Name</label>
+            </dt>
+            <dd>
+                <input type="text" name="buildingno" id="buildingno" required>
+            </dd>
+        </dl>
+    </fieldset>
+    <input type="submit" value="Register">
+    </form>
+</body>
+</html>
