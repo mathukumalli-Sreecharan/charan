@@ -1,0 +1,31 @@
+body {
+    text-align: center;
+    padding-top: 100px;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+.traffic-light {
+    display: inline-block;
+    width: 120px;
+    background-color: black;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.light {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    border-radius: 50%;
+    background-color: #333;
+}
+.red {
+    background-color: red;
+}
+.yellow {
+    background-color: orange;
+}
+.green {
+    background-color: green;
+}
