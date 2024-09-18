@@ -1,0 +1,16 @@
+/* body{
+  width: 200px;
+  height: 200px;
+  border: 10px solid black;
+}
+body::after{
+  background-color:blue;
+} */
+body::after{
+  content: "";
+  display: block;
+  width: 200px;
+  height: 200px;
+  background-color: aquamarine;
+  border: 5px solid black;
+}
