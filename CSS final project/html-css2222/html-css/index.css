@@ -1,0 +1,682 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Jost", "Poppins", "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1.2;
+    overflow-x: hidden; 
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    background-image: url('living area.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    position: relative;
+    padding: 15px 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+
+.navbar {
+    position: fixed;
+    top: 3%;
+    left: 10%;
+    width: 80%;
+    padding: 20px;
+    background-color: black;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    border-radius: 30px;
+    align-items: center;
+    z-index: 10;
+    transition: height 0.3s ease; 
+}
+
+
+#h {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #333; 
+    padding: 5px 15px;
+    border-radius: 50px;
+    letter-spacing: 2px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.h11 {
+    display: flex;
+    gap: 50px;
+    margin-left: 180px;
+    justify-content: center;
+}
+
+
+.h11 input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+    margin-left: auto; 
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+.home, .page {
+    position: relative;
+}
+
+.home:hover .home-c,
+.page:hover .content1
+{
+    display: block;
+}
+
+.home-c, .content1 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(241, 241, 233, 0.9);
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 11;
+}
+
+.home-c a, .content1 a{
+    color: black;
+    font-size: 16px;
+    padding: 8px;
+    display: block;
+    text-decoration: none;
+}
+
+.home-c a:hover, .content1 a:hover {
+    background-color: rgb(180, 237, 237);
+}
+
+
+.icons {
+    display: flex;
+    margin-left: auto; 
+}
+
+.icons i {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.icons i:hover {
+    color: lightblue;
+}
+
+.h11 label {
+    position: relative;
+    font-size: 16px;
+    color: #fff; 
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.h11 label::after {
+    content: '\25BC';
+    font-size: 12px;
+    margin-left: 5px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+}
+
+
+.h11 div:hover label::after {
+    transform: rotate(180deg);
+}
+
+
+@media (max-width: 1300px) {
+    .nav {
+        flex-direction: column;
+        gap: 0px;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        min-height: 0px;
+        height: auto; 
+        align-items: flex-start; 
+        /* background-image: none;  */
+        background-color: rgba(41, 38, 38, 0.5); 
+    }
+
+    
+    #h {
+        margin-top: 10px; 
+        margin-left: 20px;
+    }
+
+   
+    .h11 {
+        display: none;
+        position: absolute;
+        top: 30px;
+        border: #333;
+        background-color: rgba(128, 128, 128, 0.5); 
+        margin: 100px;
+        padding: 10px;
+    }
+
+    .hamburger {
+        display: flex; 
+        margin-right: 10px;
+    }
+
+    #ham:checked ~ .nav .h11 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%; /* Full width */
+    }
+
+    .home-c, .content1{
+        position: static;
+        padding: 5px 0;
+        width: 100%;
+    }
+
+    .icons {
+        margin-top: 10px;
+    }
+}
+
+
+.c-h {
+    margin-top: 0 !important;
+    margin-bottom: 50px !important;
+    font-size: larger !important;
+}
+
+.c1 {
+    margin-top: 0 !important;
+}
+
+h1, h3, .c-h {
+    font-weight: 300 !important;
+    font-family: "Jost", "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+    font-size: 2.368593037rem !important; 
+}
+
+h4{
+    font-weight: 200;
+}
+
+p{
+    font-family: "Jost", "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.res1{
+    display: none;
+}
+
+
+.c1-t {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.s {
+    margin-top: 100px;
+}
+
+.c3, .c6, .c9, .c12 {
+    background-image: url(./c2img_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding: 80px;
+    height: 80vh;
+}
+
+.c9 {
+    width: 100%;
+}
+
+.c1, .c4, .c7, .c10, .c13 {
+    text-align: center;
+    margin: 0 auto;
+    padding: 100px;
+    max-width: 1200px;  
+}
+
+.cll, .c8, .c5, .c14 {
+    width: 100%;
+}
+
+.im15 {
+    width: 100%;
+}
+
+.im > img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.im {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 1200px; 
+}
+
+img{
+    border-radius: 20px;
+}
+
+img:hover{
+    transform: scale(1.05);
+    filter: brightness(70%);
+    background-size: cover;
+    transition: 0.5s ease-in-out;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.f-t {
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    color: rgb(43, 70, 205);
+    justify-content: center;
+    gap: 20px;
+}
+
+.f-f {
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+}
+
+
+
+@media (max-width: 1120px) {
+    .im1 > img, .im4 > img, .im5 > img, .im6 > img, .im8 > img {
+        width: 30%;
+    }
+    .c1 {
+        width: 100%;
+        margin: 0 auto;
+        
+    }
+    img{
+        border-radius: 20px;
+    }
+
+    img:hover{
+        transform: scale(1.05);
+        filter: brightness(70%);
+        background-size: cover;
+        transition: 0.5s ease-in-out;
+    }
+}
+
+@media (max-width: 980px) and (min-width: 761px) {
+
+    .c1-t {
+        display: flex;
+        flex-direction: column;
+        gap: 20px; 
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+    .c1-t1 {
+        display: flex;
+        flex-direction: row; 
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        padding: 20px;
+        gap: 20px; 
+    }
+
+    .c1-t1 img {
+        width: 45%; 
+        height: auto;
+        object-fit: cover; 
+        border-radius: 10px; 
+    }
+
+    img{
+        border-radius: 20px;
+    }
+
+    img:hover{
+        transform: scale(1.05);
+        filter: brightness(70%);
+        background-size: cover;
+        transition: 0.5s ease-in-out;
+    }
+
+    .r1 {
+        width: 50%; 
+        padding-left: 20px; 
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+    }
+
+    
+    .r1 h3 {
+        font-size: 1.8em; 
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+    
+
+    .r1 p {
+        font-size: 1.1em; 
+        line-height: 1.6; 
+    }
+
+    .c5 , .c8 , .c11 , .c14{
+        display: none;
+    }
+
+    .res1 {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        gap: 20px; 
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .res1 > img {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 20px;
+    }
+    .im >img{
+        width: 540px;
+        height: 720px;
+    }
+
+    .c4 , .c7 , .c10 , .c13{
+       
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 760px) {
+    
+    .c1-t {
+        display: flex;
+        flex-direction: column;
+        gap: 20px; /* Space between the sections */
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+    .c1-t1 {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center;
+        width: 100%; 
+        margin: 0 auto;
+        padding: 20px;
+        gap: 15px; 
+    }
+
+    
+    .c1-t1 img {
+        width: 100%; 
+        height: auto;
+        object-fit: cover; 
+        border-radius: 10px;
+    }
+
+
+    .r1 {
+        width: 100%; 
+        padding: 0 20px; 
+        text-align: center; 
+    }
+
+    .r1 h3 {
+        font-size: 1.6em; 
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+
+  
+    .r1 p {
+        font-size: 1em; 
+        line-height: 1.5; 
+    }
+
+    .c5 , .c8 , .c11 , .c14{
+        display: none;
+    }
+
+    .res1 {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        gap: 20px; 
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .res1 > img {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 20px;
+    }
+    .im >img{
+        width: 510px;
+        height: 670px;
+    }
+
+    .c4 , .c7 , .c10 , .c13{
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        text-align-last: center;
+    }
+}
+/* For screens below 535px */
+@media (max-width: 535px) {
+    body {
+        overflow-x: hidden; /* Prevent horizontal overflow */
+    }
+
+    .header {
+        background-position: center; /* Center the background image */
+        background-attachment: scroll; /* Prevent the background from cutting off */
+        background-size: cover; /* Ensure it covers the entire area */
+    }
+
+    .c1-t1, .im > img {
+        width: 100%; /* Ensure images take full width and prevent overflow */
+    }
+
+    .c4, .c7, .c10, .c13 {
+        width: 100%; /* Ensure full width to prevent gaps */
+        text-align: center;
+    }
+
+    .im {
+        width: 100%; /* Ensure container for images takes full width */
+        margin: 0 auto; /* Center the container */
+        padding: 0; /* Remove extra padding */
+    }
+
+    .hamburger {
+        margin-right: 10px;
+    }
+}
+
+/* For screens below 400px */
+@media (max-width: 400px) {
+    .nav {
+        width: 100%; /* Ensure the navbar spans full width */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .header {
+        height: 100vh; /* Make sure header height is full screen */
+        background-position: top center; /* Adjust background positioning */
+    }
+
+    .icons {
+        margin-top: 5px; /* Reduce margin on smaller screens */
+    }
+
+    .home-c, .content1 {
+        width: 100%; /* Dropdown menu width adjustment */
+    }
+}
+
+/* For screens below 1120px */
+@media (max-width: 1120px) {
+    .c1, .c4, .c7, .c10, .c13 {
+        padding: 80px; /* Adjust padding to fit content */
+        max-width: 100%; /* Ensure full width to prevent gaps */
+    }
+
+    .im > img {
+        width: 100%; /* Ensure images fit within container */
+    }
+}
+
+/* For screens between 980px and 760px */
+@media (max-width: 980px) and (min-width: 761px) {
+    .c1-t1 {
+        flex-direction: column; /* Stack images vertically */
+        width: 100%;
+        padding: 20px;
+    }
+
+    .c1-t1 img {
+        width: 100%; /* Ensure images fit within container */
+    }
+
+    .r1 {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+}
+
+/* For screens below 760px */
+@media (max-width: 760px) {
+    .c1-t1 {
+        flex-direction: column; /* Stack images vertically */
+        width: 100%;
+        padding: 10px; /* Adjust padding */
+    }
+
+    .c1-t1 img {
+        width: 100%; /* Ensure images fit within container */
+    }
+
+    .r1 {
+        padding: 10px; /* Adjust padding for smaller screens */
+        text-align: center; /* Center-align text */
+    }
+}
+
+/* For screens below 535px */
+@media (max-width: 535px) {
+    .header {
+        background-size: cover; /* Ensure the background image covers the area */
+    }
+
+    .c1-t1, .im > img {
+        width: 100%; /* Ensure images take full width and prevent overflow */
+    }
+
+    .c4, .c7, .c10, .c13 {
+        width: 100%; /* Ensure full width to prevent gaps */
+    }
+
+    .im {
+        width: 100%; /* Ensure container for images takes full width */
+        padding: 0; /* Remove extra padding */
+    }
+
+    .hamburger {
+        margin-right: 10px; /* Adjust margin for smaller screens */
+    }
+}
+
+/* For screens below 400px */
+@media (max-width: 400px) {
+    .nav {
+        width: 100%; /* Ensure the navbar spans full width */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .header {
+        height: 100vh; /* Ensure header height is full screen */
+        background-position: center; /* Adjust background positioning */
+    }
+
+    .icons {
+        margin-top: 5px; /* Reduce margin on smaller screens */
+    }
+
+    .home-c, .content1 {
+        width: 100%; /* Dropdown menu width adjustment */
+    }
+}
